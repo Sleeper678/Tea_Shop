@@ -106,7 +106,7 @@
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url(images/Background_1.png);
+    background-image: url(images/background_1.png);
     background-position: center;
     background-size: cover;
     display: flex;
