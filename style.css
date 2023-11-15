@@ -1,0 +1,792 @@
+@font-face {
+    font-family: "Lemon";
+    src: url(font/LEMONMILK-Bold.otf);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    overflow-x: hidden;
+    font-family: "Poppins" ,sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* width */
+.preview::-webkit-scrollbar {
+    width: 4px;
+    
+  }
+  
+  /* Track */
+  .preview::-webkit-scrollbar-track {
+    background: transparent; 
+    
+  }
+   
+  /* Handle */
+  .preview::-webkit-scrollbar-thumb {
+    background: #9191b498; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .preview::-webkit-scrollbar-thumb:hover {
+    background: #9191b4; 
+  }
+
+  /* NAVBAR SECTION */
+  .navbar {
+    background-color: #22242e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 20px 30px;
+    color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a {
+    margin: 0 30px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 166, 0, 0);
+    transition: all 1s;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-links li a:hover{
+    color: rgba(245, 245, 245, 0.897);
+    border-bottom: 1px solid gray;
+}
+.btn-about {
+    justify-content: center;
+    padding: 8px 13px ;
+    background: white;
+    border-radius: 20px;
+    color: black;
+    transition: all .5s;
+    border: 1px solid #22242e00;
+}
+
+.btn-about:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.logo img{  
+    max-width: 125px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 38px;
+    cursor: pointer;
+    display: none;
+}
+/* HEADER SECTION */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/Background_1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.header-content {
+    margin-bottom: 50px;
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+}
+
+
+.header-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.header-content h2{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.header-content h3{
+    font-family: cursive;
+}
+
+/* Brand Section */
+
+
+
+.brand .btn-about {
+    justify-content: center;
+    padding: 10px 40px ;
+    background: #22242E;
+    border-radius: 20px;
+    color: whitesmoke;
+    transition: all .5s;
+    border: 1px solid #22242e00;
+}
+
+.brand .btn-about:hover {
+    background: white;
+    color: #22242E;
+    border: 1px solid #22242E;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: black;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.brand{
+    margin: 35px auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.brand .title{
+    color: black;
+    margin-top: 80px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.column:nth-child(4){
+    justify-content: center;
+}
+.column img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: .3s;
+    
+}
+
+.column img:hover{
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.66);
+    scale: 1.05;
+    border-radius: 10px;
+    transform: translateY(-12px);
+}
+
+.column h4{
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.button{
+    display: flex;  
+    justify-content: center;
+  
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+/* Method Section */
+
+.method{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.method::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+.method::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #23293500, #232935);
+} 
+
+.method .title{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 38px;
+    width: 100vw;
+}
+.method .line{
+    width:80px ;
+    background-color: #D96C07;
+}
+.procces{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center  ;
+    justify-content: space-around;
+}
+.step{
+    color: white;
+    width: 20%;
+  
+}
+
+
+.step:nth-child(2){
+    transform: translateY(50px);
+}
+.step:nth-child(3){
+
+    transform: translateY(100px);
+}
+
+.step h2{
+    font-size: 40px;
+}
+.step h3{
+    margin-top: 10px;
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+/* Comment Section */
+.comment{
+    height: 100vh;
+    width: 100vw;
+    background-color: #232935   ;
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+}
+
+
+.comment .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white    ;
+    font-size: 45px;
+    margin: auto;
+}
+.preview{
+    overflow-y: scroll;
+    margin: 0px auto;
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+
+
+.profile{
+    padding: 20px;
+    background-color: #779EDA;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+.profile img{
+    max-width: 50px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.profile .name .bio{
+    margin-top: 10px;
+    margin-left: 8px;
+
+}
+.opinion:nth-child(even) .profile{
+    background-color: #5774A0;
+    scale: .85;
+} 
+
+/* Footer */
+
+    footer{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(images/background_3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+    }
+    footer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #23293500, #232935);
+}
+    .quote{
+        color: white;
+        z-index: 2;
+    }
+    .quote p{
+       
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+    }
+    .quote .site_logo{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        margin-top: 20px;
+        font-family: "Lemon", sans-serif;
+        margin-bottom: 60px;
+    }
+
+    .quote .site_logo span{
+        color:rgb(255, 238, 0);
+    }
+    footer .bottom{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: space-between;
+        
+    }
+    footer .about .line{
+        background-color:white ;
+    }
+    footer .bottom li{
+        list-style:none ;
+
+    }
+    footer .bottom .side,
+    footer .bottom .about{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        
+    }
+    footer .bottom .side .signature{
+        font-family: "Lemon" ,sans-serif;
+        
+    }
+    footer .bottom .side .list,
+    footer .bottom .side .social-media
+    {
+        display: flex;
+        justify-content: center  ;
+        margin: 10px 0px;
+    }
+    footer .bottom .side .list ul,
+    footer .bottom .side .social-media .icon{
+      display: inline-flex;
+      gap: 30px;
+    }
+    footer .bottom .side .social-media li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #22191d67;
+       
+    }
+    footer .bottom .side .social-media li a{
+        margin: 4px auto 0px;
+    } 
+    footer .bottom .side .social-media li a i{
+        font-size: 25px;
+       
+    }
+    footer .bottom .side .social-media li a i,
+    footer .bottom .side .list ul li a{
+        color: rgba(245, 245, 245, 0.788);
+    }
+    footer .bottom .side .social-media li a:hover i,
+    footer .bottom .side .list ul li a:hover{
+        color: whitesmoke;
+    }
+
+    footer .bottom .about .contact,
+    footer .bottom .about .line,
+    footer .bottom .about .adress,
+    footer .bottom .about .phone,
+    footer .bottom .about .email{
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 0;
+    }
+    footer .bottom .about .contact{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    footer .bottom .about .line{
+        width: 125px;
+    }
+    footer .bottom .about .phone span,
+    footer .bottom .about .email span{
+        color: #b47c31;
+        margin-left: 20px;
+    }
+    footer .copy{
+        width: 100vw;
+        height: 10vh;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* RESPONSIVE */
+/* UKURAN TABLET */
+@media only screen and (max-width: 768px ) {
+    .navbar {
+        background-color: transparent;
+    }
+
+    .logo img{  
+        max-width: 125px;
+      margin-top: 15px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        background: black;
+        
+    }
+    .nav-links li {
+        margin-top: 30px;
+        z-index: 2;
+    }
+    .hidden {
+        display: none;
+       
+    }
+    nav .btn-about{
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .brand img{
+        width: 250px;
+        height: 250px;
+        
+    }
+    .brand .title{
+        margin-top: 30px;
+        margin-bottom: 20px;
+       
+    }
+    .row{
+        margin-top: 20px;
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+       
+    }
+    .column{
+        margin-top: 10px;   
+        width: 325px;
+
+    }
+    .procces{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .step {
+        width: 25%;
+    }
+
+    .step h2{
+        font-size: 30px ;
+    }
+    .step h3{
+        font-size: 28px;
+    }
+    .comment{
+        display: flex;
+        flex-direction: column;
+    }
+    .comment .title{
+        justify-content: center;
+        text-align: center;
+        font-size: 35px;
+        margin: 20px auto 90px;
+    }
+    .preview{
+        width: 90vw;
+        margin: 0px auto 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap ;
+    }   
+    .opinion{
+        scale: .75;
+    }
+    footer .quote p{
+        font-size: 1.5rem;
+        margin-top: 90px;
+    }
+    footer .bottom .side,
+    footer .bottom .about{
+        scale: .85;
+    }
+    footer .quote .site_logo{
+    font-size: 30px;
+    }
+    footer .bottom .side .list ul,
+    footer .bottom .side .social-media .icon{
+        gap: 10px;
+    }
+    footer .bottom .about .adress{
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 480px ){
+    .header-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .header-content h2{
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .column{
+        max-width: 150px;
+    }
+    .row .column h4{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .brand .title {
+        font-size:24px ;
+    }
+    .brand img{
+        width: 125px;
+        height: 125px;
+        
+    }
+    .button .btn-about{
+        scale: .80;
+    }
+    .procces{
+        overflow-y:scroll ;
+    }
+    section.method .title {
+        font-size: 28px;
+    }
+    .step h2{
+        font-size: 25px;
+       font-weight: bolder;
+    }
+    .step h3{
+        margin-top: 5px;
+        font-size: 99%;
+        margin-bottom: 5px;
+    }
+    .step p{
+        font-size: 80%;
+    }
+    .comment h2{
+        font-size: 38px;
+    }
+    footer .bottom{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .quote p{
+        width: 90%;
+        margin: 0px auto;
+        font-size: .85rem;
+        margin-top: 60px;
+    }
+    footer .bottom .side,
+    footer .bottom .about{
+        scale: .85;
+    }
+    footer .quote .site_logo{
+    font-size: 20px;
+    }
+   
+    footer .bottom .side,
+    footer .bottom .about{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    footer .quote .site_logo{
+        margin-bottom: 10px;
+    }
+    footer .bottom .side .signature,
+    footer .bottom .side .list{
+        display: none;
+    }
+    footer .bottom .side{
+        order: 2;
+    }
+    footer .bottom .side .social-media
+    {
+        display: flex;
+        justify-content: center  ;
+        margin: 5px 0px;
+    }
+    footer .bottom .side .social-media .icon{
+      gap: 15px;
+    }
+    footer .bottom .side .social-media li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #22191d67;
+       
+    }
+    footer .bottom .side .social-media li a{
+        margin: 4px auto 0px;
+    } 
+    footer .bottom .side .social-media li a i{
+        font-size: 25px;
+        color: rgba(245, 245, 245, 0.788);
+    }
+    
+    footer .bottom .side .social-media li a:hover i{
+        color: whitesmoke;}
+    
+
+    footer .bottom .about .contact,
+    footer .bottom .about .line,
+    footer .bottom .about .adress,
+    footer .bottom .about .phone,
+    footer .bottom .about .email{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 0;
+        font-size: .85rem;
+    }
+    footer .bottom .about .contact{
+        font-size: 20px;
+    }
+    footer .bottom .about .line{
+        width: 100px;
+        margin: 0px auto;
+    }
+    footer .bottom .about .phone span,
+    footer .bottom .about .email span{
+        margin-left: 15px;
+    }
+    footer .copy{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px ){
+    .button .btn-about{
+        scale: .75;
+    }
+    .brand img{
+        width: 100px;
+        height: 100px;
+    }
+    .conntent .row .column h4{
+        font-size: .3rem;
+    }
+    .profile img{
+        max-width: 60px;
+    }
+    .name{
+        margin-bottom: 10px;
+    }
+    .profile .name .bio{
+        margin-top: 10px;
+        margin-left: 15px;
+    
+    }
+}
